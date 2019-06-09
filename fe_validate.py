@@ -1,7 +1,10 @@
+import time
 import librosa
 import numpy as np
 import os
 import csv
+
+start_time = time.clock()
 
 # header for csv file
 header = 'poly_features chroma_cens chroma_cqt chroma_stft tempogram spectral_centroid spectral_bandwidth spectral_rolloff spectral_contrast spectral_flatness zero_crossing_rate rmse'
@@ -62,3 +65,5 @@ for genre in genres:
             writer.writerow(tmp.split())
 
 print("Finish feature extraction.")
+
+print(f'{(time.clock() - start_time)/60} min')
