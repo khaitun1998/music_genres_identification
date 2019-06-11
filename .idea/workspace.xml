@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d8bbd70-a9fc-4e0c-b251-2cf1d5f0a58d" name="Default Changelist" comment="basically finish">
-      <change beforePath="$PROJECT_DIR$/web/Http/controller/speech/fe_validate.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/Http/controller/speech/fe_validate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Http/controller/speech/feature_extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/Http/controller/speech/feature_extraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Http/controller/speech/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/Http/controller/speech/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Http/controller/speech/data/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/web/Http/controller/speech/data/test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Http/controller/speech/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/Http/controller/speech/predict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Http/controller/speech/test_data/chunks/chunks1.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/web/Http/controller/speech/test_data/chunks/chunks1.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Http/controller/speech/test_data/chunks/chunks10.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/web/Http/controller/speech/test_data/chunks/chunks10.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Http/controller/speech/test_data/chunks/chunks11.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/web/Http/controller/speech/test_data/chunks/chunks11.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Http/controller/speech/test_data/chunks/chunks12.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/web/Http/controller/speech/test_data/chunks/chunks12.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Http/controller/speech/test_data/chunks/chunks2.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/web/Http/controller/speech/test_data/chunks/chunks2.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Http/controller/speech/test_data/chunks/chunks3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/web/Http/controller/speech/test_data/chunks/chunks3.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Http/controller/speech/test_data/chunks/chunks4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/web/Http/controller/speech/test_data/chunks/chunks4.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Http/controller/speech/test_data/chunks/chunks5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/web/Http/controller/speech/test_data/chunks/chunks5.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Http/controller/speech/test_data/chunks/chunks6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/web/Http/controller/speech/test_data/chunks/chunks6.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Http/controller/speech/test_data/chunks/chunks7.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/web/Http/controller/speech/test_data/chunks/chunks7.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Http/controller/speech/test_data/chunks/chunks8.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/web/Http/controller/speech/test_data/chunks/chunks8.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Http/controller/speech/test_data/chunks/chunks9.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/web/Http/controller/speech/test_data/chunks/chunks9.mp3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,11 +43,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/Http/controller/speech/predict.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-998">
-              <caret column="14" selection-start-column="14" selection-end-column="14" />
+            <state relative-caret-position="190">
+              <caret line="79" column="103" lean-forward="true" selection-start-line="79" selection-start-column="103" selection-end-line="79" selection-end-column="103" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/web/Http/controller/speech/split.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -62,7 +76,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/Http/controller/speech/fe_validate.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -122,19 +136,20 @@
         <option value="$PROJECT_DIR$/web/route/routes.js" />
         <option value="$PROJECT_DIR$/web/Http/model/musicGenresModel.js" />
         <option value="$PROJECT_DIR$/web/Http/controller/musicGenresController.js" />
-        <option value="$PROJECT_DIR$/web/Http/controller/speech/predict.py" />
         <option value="$PROJECT_DIR$/web/public/assets/pages/scripts/login-5.min.js" />
         <option value="$PROJECT_DIR$/web/views/index.ejs" />
         <option value="$PROJECT_DIR$/web/Http/controller/speech/feature_extraction.py" />
         <option value="$PROJECT_DIR$/web/Http/controller/speech/train.py" />
         <option value="$PROJECT_DIR$/web/Http/controller/speech/fe_validate.py" />
+        <option value="$PROJECT_DIR$/web/Http/controller/speech/predict.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="25" />
+    <option name="x" value="282" />
+    <option name="y" value="27" />
     <option name="width" value="918" />
-    <option name="height" value="1073" />
+    <option name="height" value="789" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -238,18 +253,18 @@
       <workItem from="1560153707047" duration="4873000" />
       <workItem from="1560160616786" duration="7250000" />
       <workItem from="1560172629871" duration="12736000" />
-      <workItem from="1560247131202" duration="410000" />
+      <workItem from="1560247131202" duration="2258000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51286000" />
+    <option name="totallyTimeSpent" value="53134000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13854167" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13854167" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -263,7 +278,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.21074815" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.26975763" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -340,29 +355,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/Http/controller/speech/predict.py">
+    <entry file="file://$PROJECT_DIR$/web/Http/controller/speech/fe_validate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-998">
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Http/controller/speech/split.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="180">
+          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Http/controller/speech/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="101" selection-start-line="9" selection-start-column="101" selection-end-line="9" selection-end-column="101" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -377,12 +375,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/Http/controller/speech/fe_validate.py">
+    <entry file="file://$PROJECT_DIR$/web/Http/controller/speech/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+        <state relative-caret-position="207">
+          <caret line="9" column="101" selection-start-line="9" selection-start-column="101" selection-end-line="9" selection-end-column="101" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Http/controller/speech/split.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Http/controller/speech/predict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="79" column="103" lean-forward="true" selection-start-line="79" selection-start-column="103" selection-end-line="79" selection-end-column="103" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>

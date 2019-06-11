@@ -88,6 +88,10 @@ for i in range(num_of_chunks):
     result_arr.append(genresArr[result[0]])
 
 category = Counter(result_arr)
-tmp_arr = [name for name, freq in category.most_common(2)]
-string_result = tmp_arr[0] + ", " + tmp_arr[1]
-print(string_result, flush=True)
+tmp_arr = [name for name, freq in category.most_common()]
+
+if len(tmp_arr) > 1:
+    string_result = tmp_arr[0] + ", " + tmp_arr[1]
+    print(string_result, flush=True)
+else:
+    print(tmp_arr[0])
