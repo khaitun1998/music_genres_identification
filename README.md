@@ -1,6 +1,6 @@
 # Music Genres Identification (MGI)
 
-# Bài tập nhận diện thể loại bài hát thông qua file nhạc
+### Bài tập nhận diện thể loại bài hát thông qua file nhạc
 
 - Họ tên sinh viên: Dương Quang Khải
 - MSSV: 16020242
