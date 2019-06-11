@@ -3,9 +3,11 @@ from sklearn.svm import SVC
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 import pickle as pk
+import sys
+import os
 
 # load csv file
-load_file = pd.read_csv("data/data.csv")
+load_file = pd.read_csv(os.path.abspath(os.path.join(os.path.dirname(sys.argv[0]), "data/data.csv")))
 genre_list = load_file.iloc[:, -1]
 
 encoder = LabelEncoder()
@@ -22,7 +24,7 @@ model.fit(X, y_train)
 
 # save model
 filename = 'model/model_svm.sav'
-pk.dump(model, open(filename, 'wb'))
+pk.dump(model, open(os.path.abspath(os.path.join(os.path.dirname(sys.argv[0]), filename)), 'wb'))
 
 # evaluate model
 test_sample = scale.transform(X_test)

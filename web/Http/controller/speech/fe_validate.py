@@ -3,6 +3,7 @@ import librosa
 import numpy as np
 import os
 import csv
+import sys
 
 start_time = time.clock()
 
@@ -13,7 +14,7 @@ for i in range(1, 31):
 header += ' label'
 header = header.split()
 
-file = open('data/retrain.csv', 'w', newline='')
+file = open(os.path.abspath(os.path.join(os.path.dirname(sys.argv[0]), 'data/retrain.csv')), 'w', newline='')
 with file:
     writer = csv.writer(file)
     writer.writerow(header)
@@ -25,9 +26,9 @@ print("Begin feature extraction.")
 
 # feature extraction function
 for genre in genres:
-    for filename in os.listdir(f'./validate/{genre}'):
+    for filename in os.listdir(os.path.abspath(os.path.join(os.path.dirname(sys.argv[0]), f'./validate/{genre}'))):
         count += 1
-        song = f'./validate/{genre}/{filename}'
+        song = os.path.abspath(os.path.join(os.path.dirname(sys.argv[0]), f'./validate/{genre}/{filename}'))
         # print("Featuring file {}".format(song))
         y, sr = librosa.load(song)
 
@@ -59,7 +60,7 @@ for genre in genres:
             tmp += f' {np.mean(i)}'
         tmp += f' {genre}'
 
-        file = open('data/retrain.csv', 'a', newline='')
+        file = open(os.path.abspath(os.path.join(os.path.dirname(sys.argv[0]), 'data/retrain.csv')), 'a', newline='')
         with file:
             writer = csv.writer(file)
             writer.writerow(tmp.split())

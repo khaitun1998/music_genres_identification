@@ -2,6 +2,7 @@ import librosa
 import numpy as np
 import os
 import csv
+import sys
 
 # header for csv file
 header = 'poly_features chroma_cens chroma_cqt chroma_stft tempogram spectral_centroid spectral_bandwidth spectral_rolloff spectral_contrast spectral_flatness zero_crossing_rate rmse'
@@ -10,7 +11,7 @@ for i in range(1, 31):
 header += ' label'
 header = header.split()
 
-file = open('data/data.csv', 'w', newline='')
+file = open(os.path.abspath(os.path.join(os.path.dirname(sys.argv[0]), 'data/data.csv')), 'w', newline='')
 with file:
     writer = csv.writer(file)
     writer.writerow(header)
@@ -22,9 +23,9 @@ print("Begin feature extraction.")
 
 # feature extraction function
 for genre in genres:
-    for filename in os.listdir(f'./genres/{genre}'):
+    for filename in os.listdir(os.path.abspath(os.path.join(os.path.dirname(sys.argv[0]), f'./genres/{genre}'))):
         count += 1
-        song = f'./genres/{genre}/{filename}'
+        song = os.path.abspath(os.path.join(os.path.dirname(sys.argv[0]), f'./genres/{genre}/{filename}'))
         # print("Featuring file {}".format(song))
         y, sr = librosa.load(song)
 
@@ -56,7 +57,7 @@ for genre in genres:
             tmp += f' {np.mean(i)}'
         tmp += f' {genre}'
 
-        file = open('data/data.csv', 'a', newline='')
+        file = open(os.path.abspath(os.path.join(os.path.dirname(sys.argv[0]), 'data/data.csv')), 'a', newline='')
         with file:
             writer = csv.writer(file)
             writer.writerow(tmp.split())
